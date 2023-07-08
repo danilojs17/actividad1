@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ITecnologies } from './interfaces/tecnologies.interface';
+import { tecnologies } from 'src/data/tecnologies';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  listTecnologies: Array<ITecnologies> = []
+
+  constructor() {
+    this.listTecnologies = tecnologies
+  }
 
 }
