@@ -12,7 +12,6 @@ export class HomePage {
   listTecnologies: Array<ITecnologies> = []
 
   constructor() {
-    this.listTecnologies = tecnologies
+    this.listTecnologies = tecnologies;
   }
-
 }

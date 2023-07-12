@@ -26,19 +26,23 @@
   text-decoration: none;
 }
 
+//clase #1
 .title {
   width: 100%;
   padding: 0;
   text-align: center;
-  color: rgb(30, 129, 190);
+  // color: #38c0ff; 
+  color: var(--title-color); // clase #2 punto 2
   font-size: 24px;
   font-weight: bold;
 }
 
+//clase #1
 .content {
   padding: 20px;
 
   .title-slide {
+    color: var(--ion-color-primary); // clase #2 punto 3
     text-align: center;
     padding: 10px;
     font-weight: bold;
@@ -49,5 +53,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background: var(--background-color); // clase #2 punto 2
+    padding: 10px;
+    border-radius: var(--border-radius); // clase #2 punto 2
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .parrafo {
+    color: var(--ion-color-primary-contrast); // clase #2 punto 3
   }
 }
